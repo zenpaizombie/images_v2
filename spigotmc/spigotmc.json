@@ -1,6 +1,8 @@
-
 {
   "Image": "quay.io/skyport/java:21",
+  "AltImages": [
+    "quay.io/skyport/java:21"
+  ],
   "Cmd": "",
   "Env": [
     "START=java -Xms128M -XX:MaxRAMPercentage=95.0 -Dterminal.jline=false -Dterminal.ansi=true -jar server.jar"
@@ -19,9 +21,9 @@
   },
   "Variables": {
     "Version": {
-        "type": "text",
-        "default": "1.21",
-        "required": true
+      "type": "text",
+      "default": "1.21",
+      "required": true
     }
   },
   "Name": "Minecraft Java: SpigotMC",
